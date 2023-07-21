@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <!-- HEADER -->
+    <!-- header -->
     <header class="header">
       <div class="container nav-flex">
         <nav class="header-nav">
@@ -47,7 +47,7 @@
           </li>
           <li class="header-contact-item">
             <a class="header-contact-link link" href="tel:+1 212-772-4150"
-              ><svg class="contact-icon" width="16" height="12">
+              ><svg class="contact-icon" width="10" height="16">
                 <use href="./icons.svg/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +1 212-772-4150</a
@@ -56,17 +56,17 @@
         </ul>
       </div>
     </header>
-    <!-- MAIN -->
+    <!-- main -->
     <main>
-      <!-- HERO -->
+      <!-- hero -->
       <section class="hero">
         <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button class="hero-btn" type="button">Request our service</button>
+        <button class="hero-btn" type="button" data-modal-open>Request our service</button>
       </section>
       <!-- Our advantages -->
       <section class="features-section">
         <div class="container">
-          <h2 hidden>Our advantages</h2>
+          <h2 class="visually-hidden">Our advantages</h2>
           <ul class="features-list list">
             <li class="features-item">
               <div class="features-icon-fon">
@@ -74,6 +74,7 @@
                   <use href="./icons.svg/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
+
               <h3 class="features-title">ATTENTION TO DETAILS</h3>
               <p class="features-text">
                 We go into all the details and processes of your business to develop a customized
@@ -86,6 +87,7 @@
                   <use href="./icons.svg/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
+
               <h3 class="features-title">PUNCTUALITY</h3>
               <p class="features-text">
                 With us, you can feel safe and secure. An important principle of the company:
@@ -98,6 +100,7 @@
                   <use href="./icons.svg/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
+
               <h3 class="features-title">PLANNING</h3>
               <p class="features-text">
                 You will be able to observe and participate in every phase of solution development
@@ -110,6 +113,7 @@
                   <use href="./icons.svg/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
+
               <h3 class="features-title">MODERN TECHNOLOGIES</h3>
               <p class="features-text">
                 We use innovative tools to solve assigned tasks. It's time to simplify work
@@ -119,7 +123,7 @@
           </ul>
         </div>
       </section>
-      <!-- WHAT WE DO -->
+      <!-- What we do -->
       <section class="work-section">
         <div class="container">
           <h2 class="section-title">What we do</h2>
@@ -131,6 +135,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-text">DESKTOP APPS</p>
             </li>
             <li class="work-item">
               <img
@@ -139,6 +144,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-text">Mobile APPS</p>
             </li>
             <li class="work-item">
               <img
@@ -147,11 +153,12 @@
                 width="370"
                 height="294"
               />
+              <p class="work-text">DESIGN SOLUTIONS</p>
             </li>
           </ul>
         </div>
       </section>
-      <!-- TEAM SECTION -->
+      <!-- Our Team -->
       <section class="team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
@@ -201,8 +208,9 @@
                 </ul>
               </div>
             </li>
+
             <li class="team-item">
-              <img src="./img/Kylie Evans.jpg" alt="Kylie Evans" width="270" height="260" />
+              <img src="./img/Kylie Evans.jpg" alt="Kylie Evans " width="270" height="260" />
               <div class="team-workers">
                 <h3 class="team-worker">Kylie Evans</h3>
                 <p class="team-profession" lang="en">Frontend Developer</p>
@@ -348,7 +356,7 @@
             <li class="client-item">
               <a class="client-link link" href="">
                 <svg class="client-icon" width="106" height="60">
-                  <use href="./icons.svg/symbol-defs.svg#icon-foster-peters"></use>
+                  <use href="./icons.svg/symbol-defs.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
@@ -356,7 +364,7 @@
             <li class="client-item">
               <a class="client-link link" href="">
                 <svg class="client-icon" width="106" height="60">
-                  <use href="./icons.svg/symbol-defs.svg#icon-company"></use>
+                  <use href="./icons.svg/symbol-defs.svg#icon-foster-peters"></use>
                 </svg>
               </a>
             </li>
@@ -380,7 +388,7 @@
         </div>
       </section>
     </main>
-    <!-- FOOTER -->
+    <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
@@ -405,6 +413,7 @@
                 </li>
                 <li class="footer-contact-item">
                   <a class="footer-contact-link link" href="tel:+1 212-772-4150">+1 212-772-4150</a>
+                  >
                 </li>
               </ul>
             </address>
@@ -448,5 +457,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="width" ="11" height="11">
+            <use href="./icons.svg/symbol-defs.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
